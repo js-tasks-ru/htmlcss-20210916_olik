@@ -1,0 +1,26 @@
+.footer {
+    background-color: var(--white);
+    padding: 71px 0 136px ;
+}
+footer .title {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 48px;
+    color: var(--black);
+    text-align: center;
+}
+footer .description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--black);
+    text-align: center; 
+    
+}
+.footer__title, .footer__descriptiont {
+    margin:0 auto;
+    max-width: 960px;
+}
+.footer__title {
+    margin-bottom: 32px;
+}
