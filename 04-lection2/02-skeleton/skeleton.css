@@ -1,0 +1,42 @@
+.skeleton {
+    display: flex;
+    flex-flow: column wrap;
+
+    width: 580px;
+    border: var(--grey-3) 1px solid;
+    border-radius: 8px;
+
+    padding: 24px 40px 32px 24px;
+}
+.skeleton__block-avatar {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 24px;
+}
+.avator {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    background-color: var(--grey-2);
+    margin-right: 16px;
+}
+.block-text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-grow: 2;
+    min-height: 64px;
+}
+
+.block-text__txt {
+    background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--grey-6) 38.47%, ar(--grey-7) 56.48%, var(--grey-8) 77.5%, var(--grey-2) 102.52%);
+    height: 20px;
+    width: 100%;
+}
+.text__one {
+     width: 45%; 
+}
+.text__two {
+     width: 65%; 
+}
