@@ -1,0 +1,10 @@
+.histogram {
+    display: flex;
+    flex-flow: column wrap;
+
+    width: 580px;
+    border: var(--grey-3) 1px solid;
+    border-radius: 8px;
+
+    padding: 16px 24px 24px;
+}
