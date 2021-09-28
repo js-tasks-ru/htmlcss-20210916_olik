@@ -7,20 +7,21 @@
     border-radius: 8px;
 
     padding: 24px 40px 32px 24px;
+    box-sizing: border-box;
 }
-.skeleton__block-avatar {
+.skeleton__header {
     display: flex;
     flex-flow: row wrap;
     margin-bottom: 24px;
 }
-.avator {
+.skeleton__avator {
     width: 64px;
     height: 64px;
     border-radius: 32px;
     background-color: var(--grey-2);
     margin-right: 16px;
 }
-.block-text {
+.skeleton__lines {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
@@ -29,14 +30,14 @@
     min-height: 64px;
 }
 
-.block-text__txt {
-    background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--grey-6) 38.47%, ar(--grey-7) 56.48%, var(--grey-8) 77.5%, var(--grey-2) 102.52%);
+.skeleton__line {
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
     height: 20px;
     width: 100%;
 }
-.text__one {
-     width: 45%; 
+.skeleton__line_short {
+     width: 172px; 
 }
-.text__two {
-     width: 65%; 
+.skeleton__line_middle {
+     width: 257px; 
 }
