@@ -21,7 +21,7 @@
 }
 .accordion__item .marker {
     display: inline-block;
-     
+    position: relative; 
 }
 .accordion[open] .marker {
     transform: rotate(225deg);
