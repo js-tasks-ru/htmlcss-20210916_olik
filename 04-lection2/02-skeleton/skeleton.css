@@ -27,17 +27,19 @@
     justify-content: space-around;
     align-items: flex-start;
     flex-grow: 2;
-    min-height: 64px;
+   
 }
 
 .skeleton__line {
     background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
     height: 20px;
     width: 100%;
+    margin-bottom: 8px;
 }
+
 .skeleton__line_short {
-     width: 172px; 
+     width: 34%; 
 }
 .skeleton__line_middle {
-     width: 257px; 
+     width: 52%; 
 }
