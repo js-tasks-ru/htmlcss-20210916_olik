@@ -5,8 +5,9 @@
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
-    max-width: 730px;
+    width: 730px;
     padding: 24px 48px 32px 32px;
+    box-sizing: border-box;
 
 }
 .accordion__item {
@@ -20,19 +21,7 @@
 }
 .accordion__item .marker {
     display: inline-block;
-    border: solid var(--grey-4);
-    border-width: 0 2px 2px 0;
-    
-    border-radius: 1px;
-    width: 16px;
-    height: 16px;
-   
-    position: absolute;
-    top: calc(50% - 8px/2 - 8px );
-    right: -16px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg); 
-  
+    position: relative; 
 }
 .accordion[open] .marker {
     transform: rotate(225deg);
