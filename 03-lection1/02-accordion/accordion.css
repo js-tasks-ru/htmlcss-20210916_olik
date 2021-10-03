@@ -8,13 +8,11 @@
     width: 730px;
     padding: 24px 48px 32px 32px;
     box-sizing: border-box;
-
 }
 .accordion__item {
     display: block;
     position: relative;
     color: var(--black);
-
 }
 .accordion__item::webkit-details-marker {
     display: none;
@@ -30,4 +28,3 @@
 .accordion__description {
     color: var(--grey-4);
 }
-
