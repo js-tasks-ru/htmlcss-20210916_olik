@@ -13,6 +13,7 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
+    white-space: nowrap;
 }
 .calendar__wrapper {
     position: relative;
@@ -28,6 +29,9 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-row-gap: 2px;
+    place-items: center;
+    justify-content: center;
+    align-content:space-between ;
 }
 .calendar__item {
     font-family: 'Source Sans Pro', sans-serif;
@@ -35,9 +39,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    /* place-items: center; */
-    justify-content: center;
-    align-content:space-between ;
+  
 }
 
 .calendar__item_day {
