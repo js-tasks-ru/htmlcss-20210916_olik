@@ -19,13 +19,13 @@
     color: var(--blue);
     white-space: nowrap;
 }
-.histogram_total {
+.histogram__total {
     font-weight: normal;
     font-size: 20px;
     line-height: 26px; 
     
 }
-.histogram_bars {
+.histogram__bars {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
