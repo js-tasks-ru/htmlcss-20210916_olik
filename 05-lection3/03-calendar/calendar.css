@@ -28,7 +28,6 @@
 
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-row-gap: 2px;
     place-items: center;
     justify-content: center;
     align-content:space-between ;
@@ -45,13 +44,13 @@
 .calendar__item_day {
     font-size: 14px;
     line-height: 20px;
-    color: #90A0B7;
+    color: var(--blue-3);
 }
 .calendar__item_curent {
     background-color: var(--blue);
     color: var(--white);
 }
 .calendar__item_str_curent {
-    background-color: #A0B1F5;
+    background-color: var(--blue-4);
     opacity: 0.2; 
 }
