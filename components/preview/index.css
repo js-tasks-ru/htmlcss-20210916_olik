@@ -1,0 +1,13 @@
+.preview {
+    flex-grow: 1;
+}
+.preview__cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 68px 0 204px;
+}
+.preview__card {
+    
+}
