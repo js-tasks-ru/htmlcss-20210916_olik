@@ -1,4 +1,4 @@
-Skip to content
+/* Skip to content
 Why GitHub? 
 Team
 Enterprise
@@ -28,7 +28,7 @@ Latest commit fc091cc on Nov 5, 2018
  History
  23 contributors
 @necolas@jonathantneal@battaglr@mattbrundage@hudochenkov@JohnAlbin@fritx@tjvantoll@tdhooper@slavanga@4refael@patrickhlauke
-349 lines (275 sloc)  5.99 KB
+349 lines (275 sloc)  5.99 KB */
   
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -42,7 +42,7 @@ Latest commit fc091cc on Nov 5, 2018
 
 html {
   line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; 
 }
 
 /* Sections
@@ -72,6 +72,11 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 /* Grouping content
@@ -379,7 +384,8 @@ template {
 [hidden] {
   display: none;
 }
-© 2021 GitHub, Inc.
+
+/* © 2021 GitHub, Inc.
 Terms
 Privacy
 Security
@@ -391,4 +397,4 @@ API
 Training
 Blog
 About
-Loading complete
+Loading complete */

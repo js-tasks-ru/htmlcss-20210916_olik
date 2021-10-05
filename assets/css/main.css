@@ -14,11 +14,12 @@
     --grey-4: #495057;
 
     --grey-5: #F9FAFC;
+    --grey-6: rgb(196, 196, 196, 0.5);
 
     --blue-3: #90A0B7;
     --blue-4: #A0B1F5;
-  
-
+    --blue-5: #334D6E;
+   
     --blue: #4263EB;
     --blue-hover: #2342C0;
 
@@ -32,6 +33,4 @@
 
 * {
     font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto', sans-serif;
-
 }
