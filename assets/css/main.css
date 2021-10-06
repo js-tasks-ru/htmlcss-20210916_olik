@@ -2,6 +2,7 @@
 
 :root {
     --white: #ffffff;
+    --white-1: #E5E5E5;
     --black: #212429;
     --pink: #F784AD;
     --purple: #7048E8;
@@ -34,4 +35,14 @@
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto', sans-serif;
 
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    margin-block-start: 0;
+    margin-block-end: 0; 
 }
