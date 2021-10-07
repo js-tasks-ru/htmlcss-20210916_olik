@@ -35,9 +35,5 @@
 .histogram__bar {
     background-color: var(--blue);
     flex-basis: 9px;
-    flex-grow: 1;
-    margin-left: 1px;
-    margin-right: 1px;
+    flex-grow: 1;    
 }
-.histogram__bar:first-child { margin-left: 0;}
-.histogram__bar:last-child { margin-right: 0;}
