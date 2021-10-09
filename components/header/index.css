@@ -1,9 +1,9 @@
 .header {
     background-color: var(--white);
+    padding: 25px 0 35px;
 }
 .header__title {
-    font-family: "inter", sans-serif;
-    padding: 95px 0 80px;
+    font-family: "inter", sans-serif;    
     font-size: 50px;
     font-weight: 500;
     line-height: 64px;

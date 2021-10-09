@@ -1,0 +1,10 @@
+.page {
+    background-color: var(--grey-5);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+ 
+}
+.page__box {
+    max-width: 1110px;
+    margin: 0 auto;
+}
