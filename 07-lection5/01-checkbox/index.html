@@ -2,10 +2,36 @@
 <!-- Страница чекбокса -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./checkbox.css">
     </head>
     <body>
-
+        <form class="form" action="/" method="post">
+           <label class="checkbox">
+               <input type="checkbox" class="checkbox__input" />
+               <div class="checkbox__state">
+                   <div class="checkbox__control">
+                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                   </div>
+                   <div class="checkbox__label">Default</div>
+               </div>
+           </label> 
+           <label class="checkbox checkbox-disable">
+            <input type="checkbox" class="checkbox__input" disabled />
+            <div class="checkbox__state">
+                <div class="checkbox__control">
+                 <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                     </svg>
+                     
+                </div>
+                <div class="checkbox__label">Disable</div>
+            </div>
+          </label>
+        </form>
     </body>
 </html>
