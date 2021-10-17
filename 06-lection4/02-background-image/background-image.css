@@ -1,0 +1,8 @@
+.component {
+    width: 900px;
+    height: 700px;
+    background-image: url(./public/forest_1024.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
