@@ -1,13 +1,9 @@
-.form {
-    display: flex;
-    flex-direction: column;
-}
 .checkbox {
     display: inline-block;
     cursor: pointer;
 }
 
-.checkbox-disable {
+.checkbox_disable {
     cursor: default;
 }
 
@@ -51,7 +47,10 @@
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__control {
     background: var(--grey-2);
-   
+}
+
+.checkbox__input:disabled ~ .checkbox__state .checkbox__icon {
+    display: none;
 }
 
 .checkbox__label {
