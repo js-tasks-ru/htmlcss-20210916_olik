@@ -2,10 +2,57 @@
 <!-- Страница радио -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./radio.css">
+        <style>
+            .content {
+                max-width: 1200px;
+                margin: 25px auto;
+                padding: 0 20px;
+                display: flex;
+                flex-direction: column;
+            }
+        </style>
     </head>
     <body>
-
+        <div class="content">
+            <label class="radio_btn">
+                <input type="radio" class="radio_btn__input" name="btn"/>
+                <div class="radio_btn__state">
+                    <div class="radio_btn__control">
+                        <div class="radio_btn__icon"></div>
+                    </div>
+                    <div class="radio_btn__label">Default</div>
+                </div>
+            </label>
+            <label class="radio_btn">
+                <input type="radio" class="radio_btn__input" name="btn"/>
+                <div class="radio_btn__state">
+                    <div class="radio_btn__control">
+                        <div class="radio_btn__icon"></div>
+                    </div>
+                    <div class="radio_btn__label">Default 2</div>
+                </div>
+            </label>
+            <label class="radio_btn">
+                <input type="radio" class="radio_btn__input" name="btn"/>
+                <div class="radio_btn__state">
+                    <div class="radio_btn__control">
+                        <div class="radio_btn__icon"></div>
+                    </div>
+                    <div class="radio_btn__label">Default 3</div>
+                </div>
+            </label>
+            <label class="radio_btn  radio_btn_disable">
+                <input type="radio" class="radio_btn__input" name="btn" disabled />
+                <div class="radio_btn__state">
+                    <div class="radio_btn__control">
+                        <div class="radio_btn__icon"></div>
+                    </div>
+                    <div class="radio_btn__label">Disable</div>
+                </div>
+            </label>
+        </div>
     </body>
 </html>

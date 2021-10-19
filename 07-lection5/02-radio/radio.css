@@ -1,0 +1,68 @@
+.radio_btn {
+    display: inline; 
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.radio_btn_disable {
+    cursor: default;
+}
+
+.radio_btn__input {
+   visibility: hidden ;
+   position: absolute;
+}
+
+.radio_btn__state {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.radio_btn__control {
+    width: 28px;
+    height: 28px;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    box-sizing: border-box;
+    border-radius: 14px;
+    position: relative;
+}
+
+.radio_btn__icon {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    background: transparent;
+    border-radius: 14px;    
+}
+
+.radio_btn__input:checked ~ .radio_btn__state .radio_btn__control {
+    border-color: var(--blue);
+}
+
+.radio_btn__input:checked ~ .radio_btn__state .radio_btn__icon {
+    background-color: var(--blue);
+}
+
+.radio_btn__input:disabled ~ .radio_btn__state .radio_btn__control {
+    border-color: var(--grey-2);
+    background-color: var(--grey-2);
+}
+
+.radio_btn__input:disabled ~ .radio_btn__state .radio_btn__icon {
+    background-color: transparent;
+}
+
+.radio_btn__label {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+    margin-left: 12px;
+}
