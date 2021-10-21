@@ -45,9 +45,7 @@
 
 .toggle__input:checked ~ .toggle__state .toggle__icon {
     background: var(--white);
-    transform: translate(100%, -50%);
-    right: 25px;
-    left: auto;
+    transform: translate(100%, -50%); 
 }
 
 .toggle__input:disabled ~ .toggle__state .toggle__control {
