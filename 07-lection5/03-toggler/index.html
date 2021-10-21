@@ -2,10 +2,42 @@
 <!-- Страница с кнопкой переключения -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./toggler.css">
+        <style>
+            .content {
+                display: flex;
+                flex-direction: column;
+                max-width: 1200px;
+                margin: 30px auto;
+                padding: 0 10px;
+            }
+            .toggle__margin {
+                margin: 0 0 12px;
+            }
+        </style>
     </head>
     <body>
-
+        <div class="content" >
+            <label class="toggle toggle__margin">
+                <input type="checkbox" class="toggle__input" />
+                <div class="toggle__state">
+                    <div class="toggle__control">
+                        <span class="toggle__icon"></span>
+                    </div>
+                    <div class="toggle__label">on / off</div>
+                </div>
+            </label>
+            <label class="toggle toggle_disable">
+                <input type="checkbox" class="toggle__input" disabled/>
+                <div class="toggle__state">
+                    <div class="toggle__control">
+                        <span class="toggle__icon"></span>
+                    </div>
+                    <div class="toggle__label">Disabled</div>
+                </div>
+            </label>
+        </div>    
     </body>
 </html>
