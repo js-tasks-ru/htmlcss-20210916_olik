@@ -2,10 +2,58 @@
 <!-- Страница с полем ввода -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="../../assets/css/main.css">
+        <!-- <link rel="stylesheet" href="../../assets/images/sprite.html"> -->
         <link rel="stylesheet" href="./input.css">
+        <style>
+            .content {
+                display: flex;
+                flex-direction: column;
+                max-width: 1200px;
+                margin: 30px auto;
+                padding: 0 10px;
+            }
+            .input__margin {
+                margin: 0 0 12px;
+            }
+        </style>
     </head>
     <body>
-
+      <div class="content">
+            <label class="input input__margin">
+              <span class="input__label">Label</span>
+              <div class="input__controls">
+                <input type="text" class="input__control" placeholder="Placeholder"/>
+                <svg class="input__icon"></svg>
+              </div>
+            </label>
+            <label class="input input__margin">
+              <span class="input__label">Focus</span>
+              <div class="input__controls">
+                <input type="text" class="input__control" />
+                <svg class="input__icon"></svg>
+              </div>
+            </label>
+            <label class="input input__margin">
+              <span class="input__label">Success</span>
+              <div class="input__controls">
+                <input type="text" class="input__control input_success" />
+                <svg class="input__icon">
+                  <use xLink:href="../../assets/images/sprite.svg#success"></use>
+                </svg>
+            </div>
+            </label>
+            <label class="input input__margin">
+              <span class="input__label">Error</span>
+              <div class="input__controls">
+                <input type="text" class="input__control input_invalid" />
+                <svg class="input__icon">
+                  <use xLink:href="../../assets/images/sprite.svg#attention"></use>
+                </svg>
+              </div>
+            </label>
+        </div>
+        
     </body>
 </html>
