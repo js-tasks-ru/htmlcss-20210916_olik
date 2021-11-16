@@ -28,23 +28,26 @@
         </style>
     </head>
     <body>
-        <div class="mobile-menu">
-           <button class="burger-menu__margin mobile-menu__btn mobile-menu__open" id="burger-menu-open">
+       
+           <button class="burger-menu__margin burger-menu__btn burger-menu__open" id="burger-menu-open">
                <svg class="burger-menu__icon">
                    <use xLink:href="../../assets/images/sprite.svg#burger-menu"></use>
                </svg>
            </button> 
            <div class="burger-menu" id="burger-menu">
                <div class="burger-menu__header">
-                   <button class="burger-menu__close-btn mobile-menu__btn" id="burger-menu-close">
+                   <button class="burger-menu__close-btn burger-menu__btn" id="burger-menu-close">
                         <svg class="burger-menu__icon">
                             <use xLink:href="../../assets/images/sprite.svg#close"></use>
                         </svg>
                    </button>
-                   <div class="header-icons">
-                        <span class="header-icons__icon rect"></span>
-                        <span class="header-icons__icon circl"></span>
-                        <span class="header-icons__icon triangl"></span>
+                   <div class="logo">
+                    <svg viewBox="0 0 110 32" class="logo__image" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0" y="1" width="30" height="30" fill="currentColor"/>
+                        <rect x="38" y="0" width="32" height="32" rx="16" fill="currentColor"/>
+                        <path d="M76 1L108 32H76V0Z"  fill="currentColor"/>
+                    </svg>
+                             
                    </div>
                </div>
                <div class="burger-menu__line"></div>
@@ -67,9 +70,9 @@
                    <li class="burger-menu__list-item"><a href="">Calendar</a></li>
                    <li class="burger-menu__list-item"><a href="">Histogram</a></li>
                    <li class="burger-menu__list-item"><a href="">Custom form elements</a></li>
-                   <li class="burger-menu__list-item"><a href="">Main page</a></li>
+                   <li class="burger-menu__list-item burger-menu__list-item-last"><a href="">Main page</a></li>
                </ul>
            </div>
-        </div>
+       
     </body>
 </html>
