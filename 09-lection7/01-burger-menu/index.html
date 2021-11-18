@@ -2,11 +2,77 @@
 <!-- Страница бургер-меню -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
         <link rel="stylesheet" href="./burger-menu.css">
+        
         <script defer src="./burger-menu.js"></script>
+        <style>
+            @media screen and (min-width: 480px) {
+                .mobile-menu {  display: none; } 
+            }
+            
+            .burger-menu__margin {
+                margin: 25px 25px;
+            }
+
+            .toggle__margin {
+                width: 100%;
+                margin: 25px auto;
+            }
+
+            .toggle__display {
+                justify-content: space-between;
+            }
+        </style>
     </head>
     <body>
-
+       
+           <button class="burger-menu__margin burger-menu__btn burger-menu__open" id="burger-menu-open">
+               <svg class="burger-menu__icon">
+                   <use xLink:href="../../assets/images/sprite.svg#burger-menu"></use>
+               </svg>
+           </button> 
+           <div class="burger-menu" id="burger-menu">
+               <div class="burger-menu__header">
+                   <button class="burger-menu__close-btn burger-menu__btn" id="burger-menu-close">
+                        <svg class="burger-menu__icon">
+                            <use xLink:href="../../assets/images/sprite.svg#close"></use>
+                        </svg>
+                   </button>
+                   <div class="burger-menu__logo">
+                    <svg viewBox="0 0 110 32" class="burger-menu__logo-image" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0" y="1" width="30" height="30" fill="currentColor"/>
+                        <rect x="38" y="0" width="32" height="32" rx="16" fill="currentColor"/>
+                        <path d="M76 1L108 32H76V0Z"  fill="currentColor"/>
+                    </svg>
+                             
+                   </div>
+               </div>
+               <div class="burger-menu__line"></div>
+               <label class="toggle toggle__margin">
+                    <input type="checkbox" class="toggle__input" />
+                    <div class="toggle__state toggle__display">
+                        <div class="toggle__label">Dark mode</div>
+                        <div class="toggle__control">
+                            <span class="toggle__icon"></span>
+                        </div>
+                        
+                    </div>
+                </label>
+               <div class="burger-menu__line"></div>
+               <h4 class="burger-menu__title">Components</h4>
+               <ul class="burger-menu__list">
+                   <li class="burger-menu__list-item"><a href="" class="burger-menu__list-href">Modal</a></li>
+                   <li class="burger-menu__list-item"><a href="" class="burger-menu__list-href">Tooltip</a></li>
+                   <li class="burger-menu__list-item active"><a href="" class="burger-menu__list-href">Avatar</a></li>
+                   <li class="burger-menu__list-item"><a href="" class="burger-menu__list-href">Calendar</a></li>
+                   <li class="burger-menu__list-item"><a href="" class="burger-menu__list-href">Histogram</a></li>
+                   <li class="burger-menu__list-item"><a href="" class="burger-menu__list-href">Custom form elements</a></li>
+                   <li class="burger-menu__list-item burger-menu__list-item-last"><a href="" class="burger-menu__list-href">Main page</a></li>
+               </ul>
+           </div>
+       
     </body>
 </html>
