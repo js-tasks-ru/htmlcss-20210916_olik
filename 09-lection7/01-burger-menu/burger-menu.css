@@ -6,17 +6,15 @@
     height: 100vh;
     background-color: var(--white);
     transform: translateX(-100vw);
-    transition: transform 200ms easy;
+    transition: transform 200ms ease;
     padding: 0 15px;
     box-sizing: border-box;
+    display: none;
 }
 
 .burger-menu[data-open] {
     transform: translateX(0);
-}
-
-.burger-menu__open[data-open] {
-    display: none;
+    display: block; 
 }
 
 .burger-menu__btn {
