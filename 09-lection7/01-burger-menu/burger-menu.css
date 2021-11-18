@@ -43,11 +43,11 @@
     display: flex;
 }
 
-.logo {
+.burger-menu__logo {
     margin: auto;
 }
 
-.logo__image {
+.burger-menu__logo-image {
     width: 110px;
     height: 32px;
 }
@@ -84,11 +84,11 @@
 .burger-menu__list-item-last {
     padding-top: 56px;
 }
-.burger-menu__list-item a {
+.burger-menu__list-href {
     text-decoration: none;
     color: var(--black);
 }
 
-.burger-menu__list-item.active a {
+.burger-menu__list-item.active .burger-menu__list-href {
     color: var(--red);
 }
