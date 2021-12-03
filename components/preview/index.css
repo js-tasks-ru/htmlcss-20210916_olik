@@ -1,13 +1,20 @@
 .preview {
     flex-grow: 1;
+    padding: 0 15px;
 }
 .preview__cards {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    gap: 30px;
+    gap: 30px ;
     padding: 68px 0 204px;
+    box-sizing: border-box;
+    
 }
 .preview__card {
     
+}
+
+@media screen and (max-width:800px){
+    .preview__cards { justify-content: center;} 
 }

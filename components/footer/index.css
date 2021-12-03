@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--white);
-    padding: 71px 0 136px ;
+    padding: 71px 15px 136px ;
 }
 .footer__title {
     font-size: 38px;

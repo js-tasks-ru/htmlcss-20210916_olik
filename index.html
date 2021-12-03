@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="./assets/css/normalize.css">
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="./components/header/index.css">
+        <link rel="stylesheet" href="./components/tabs/index.css">
         <link rel="stylesheet" href="./components/page/index.css">
         <link rel="stylesheet" href="./components/footer/index.css">
         <link rel="stylesheet" href="./components/preview/index.css">
@@ -13,19 +14,75 @@
     </head>
     <body>
         <div class="page">
-            <header class="header">
+            <header class="header ">
                 <div class="page__box">
-                    <h1 class="header__title">Reusable component library</h1>
+                    <div class="header__logo ">
+                        <svg viewBox="0 0 110 32" class="header__logo-image" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0" y="1" width="30" height="30" fill="currentColor"/>
+                            <rect x="38" y="0" width="32" height="32" rx="16" fill="currentColor"/>
+                            <path d="M76 1L108 32H76V0Z"  fill="currentColor"/>
+                        </svg>
+                                
+                    </div>
+                   
+                        <h1 class="header__title">Reusable component library</h1>
+                    
                 </div>
+                
             </header>
             <main class="preview">
-                <div class="page__box preview__cards">
-                    <div class="card preview__card"></div>
-                    <div class="card preview__card"></div>
-                    <div class="card preview__card"></div>
-                    <div class="card preview__card"></div>
-                    <div class="card preview__card"></div>
-                    <div class="card preview__card"></div>
+                <div class="tabs">
+                    <nav class="tabs__menu">
+                        <ul class="tab__menu">
+                            <li class="tab__menu-item">
+                                <label class="tab__menu-nav" for="#tab1">
+                                    <input type="radio" id="#tab1" class="tab__menu-input" checked name="tab">
+                                    <div class="tab__menu-label">All components</div>
+                                </label>
+                            </li>
+                            <li class="tab__menu-item">
+                                <label class="tab__menu-nav" for="#tab2">
+                                    <input type="radio" id="#tab2" class="tab__menu-input" name="tab">
+                                    <div class="tab__menu-label">Atoms</div>
+                                </label>
+                            </li>
+                            <li class="tab__menu-item">
+                                <label class="tab__menu-nav" for="#tab3">
+                                    <input type="radio" id="#tab3" class="tab__menu-input" name="tab">
+                                    <div class="tab__menu-label">Molecules</div>
+                                </label>
+                            </li>
+                            <li class="tab__menu-item tab__menu-item-last">
+                                <label class="tab__menu-nav" for="#tab4">
+                                    <input type="radio" id="#tab4" class="tab__menu-input" name="tab">
+                                    <div class="tab__menu-label">Organisms</div>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="tabs__separate"></div>
+                    </nav>
+                    <div class="tabs__tab-content">
+                        <section class="page__box preview__cards tabs__tab-content-1">
+                            <div class="card preview__card">Atoms</div>
+                            <div class="card preview__card">Molecules</div>
+                            <div class="card preview__card">Atoms</div>
+                            <div class="card preview__card">Organisms</div>
+                            <div class="card preview__card">Molecules</div>
+                            <div class="card preview__card">Organisms</div>
+                        </section>
+                        <section class="page__box preview__cards tabs__tab-content-2">
+                            <div class="card preview__card">Atoms</div>
+                            <div class="card preview__card">Atoms</div>
+                        </section>
+                        <section class="page__box preview__cards tabs__tab-content-3">
+                            <div class="card preview__card">Molecules</div>
+                            <div class="card preview__card">Molecules</div>
+                        </section>
+                        <section class="page__box preview__cards tabs__tab-content-4">
+                            <div class="card preview__card">Organisms</div>
+                            <div class="card preview__card">Organisms</div>
+                        </section>
+                    </div>
                 </div>
             </main>
             <footer class="footer">

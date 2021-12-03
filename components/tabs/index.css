@@ -1,0 +1,90 @@
+.tabs {
+    
+   
+}
+
+.tabs__menu {
+    background-color: var(--white);
+    margin: 0 -15px;
+}
+
+.tab__menu {
+    display: flex;
+    flex-direction: row;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.tabs__separate {
+    height: 1px;
+    background-color: var(--grey-2);    
+}
+
+.tab__menu-item {
+    margin: 0 40px 8px 0px;
+    cursor: pointer;
+}
+
+.tab__menu-input { 
+    visibility: hidden ;
+    position: absolute;
+}
+
+.tab__menu-label { 
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--grey-3);
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    border-bottom: 5px solid transparent;
+}
+
+.tab__menu-item-last {
+    margin-right: 0;
+}
+
+.tab__menu-input:checked ~ .tab__menu-label { 
+    position: relative;
+    color: var(--black);
+    transition: 250ms all;    
+}
+
+.tab__menu-input ~ .tab__menu-label:after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: var(--black);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.tab__menu-input:checked ~ .tab__menu-label:after { 
+    transform: scaleX(1);
+}
+
+.tabs__tab-content-1, .tabs__tab-content-2, .tabs__tab-content-3, .tabs__tab-content-4 {
+   
+    display: none;
+}
+
+#tab1:checked ~ .tabs__tab-content .tabs__tab-content-1 {
+   
+    display: block;
+}
+#tab2:checked ~ .tabs__tab-content .tabs__tab-content-2 {
+   
+    display: block;
+}
+#tab3:checked ~ .tabs__tab-content .tabs__tab-content-3 {
+   
+    display: block;
+}
+#tab4:checked ~ .tabs__tab-content .tabs__tab-content-4 {
+   
+    display: block;
+}
