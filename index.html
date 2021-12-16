@@ -33,34 +33,35 @@
             <main class="preview">
                 <div class="tabs">
                     <nav class="tabs__menu">
+                        <input type="radio" id="tab1" class="tabs__menu-input" checked name="tab">
+                        <input type="radio" id="tab2" class="tabs__menu-input" name="tab">
+                        <input type="radio" id="tab3" class="tabs__menu-input" name="tab">
+                        <input type="radio" id="tab4" class="tabs__menu-input" name="tab">
                         <ul class="tab__menu">
                             <li class="tab__menu-item">
-                                <label class="tab__menu-nav" for="#tab1">
-                                    <input type="radio" id="#tab1" class="tab__menu-input" checked name="tab">
-                                    <div class="tab__menu-label">All components</div>
+                                <label class="tab__menu-nav" for="tab1">
+                                  All components
                                 </label>
                             </li>
                             <li class="tab__menu-item">
-                                <label class="tab__menu-nav" for="#tab2">
-                                    <input type="radio" id="#tab2" class="tab__menu-input" name="tab">
-                                    <div class="tab__menu-label">Atoms</div>
+                                <label class="tab__menu-nav" for="tab2">
+                                    Atoms
                                 </label>
                             </li>
                             <li class="tab__menu-item">
-                                <label class="tab__menu-nav" for="#tab3">
-                                    <input type="radio" id="#tab3" class="tab__menu-input" name="tab">
-                                    <div class="tab__menu-label">Molecules</div>
+                                <label class="tab__menu-nav" for="tab3">
+                                    Molecules
                                 </label>
                             </li>
                             <li class="tab__menu-item tab__menu-item-last">
-                                <label class="tab__menu-nav" for="#tab4">
-                                    <input type="radio" id="#tab4" class="tab__menu-input" name="tab">
-                                    <div class="tab__menu-label">Organisms</div>
+                                <label class="tab__menu-nav" for="tab4">
+                                    Organisms
                                 </label>
                             </li>
                         </ul>
-                        <div class="tabs__separate"></div>
+                        
                     </nav>
+                    <div class="tabs__separate"></div>
                     <div class="tabs__tab-content">
                         <section class="page__box preview__cards tabs__tab-content-1">
                             <div class="card preview__card">Atoms</div>
